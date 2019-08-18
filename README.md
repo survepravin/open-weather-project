@@ -1,4 +1,4 @@
-## Prudential test automation task
+## Test automation task
 1. __Acceptance Criteria:__
      * __Write a first end-to-end test that__ 
        * Starts at https://openweathermap.org/
