@@ -16,7 +16,7 @@ public class BrowserFactory {
 	static WebDriver driver;
 
 	/** The Constant CHROME_EXE_PATH. */
-	private static final String CHROME_EXE_PATH = "/libs/chromedriver.exe";
+	private static final String CHROME_EXE_PATH = "/libs/chromedriver_78.exe";
 
 	/**
 	 * Gets the driver.
@@ -32,17 +32,17 @@ public class BrowserFactory {
 			System.setProperty("webdriver.chrome.driver", chromePath);
 
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--ignore-certificate-errors");
-			options.addArguments("--disable-bundled-ppapi-flash");
-			options.addArguments("--disable-extensions");
-			options.addArguments("--disable-web-security");
-			options.addArguments("--always-authorize-plugins");
-			options.addArguments("--allow-running-insecure-content");
-			options.addArguments("--test-type");
-			options.addArguments("--enable-npapi");
-			options.addArguments("--disable-extensions");
+			//options.addArguments("--ignore-certificate-errors");
+			//options.addArguments("--disable-bundled-ppapi-flash");
+			//options.addArguments("--disable-extensions");
+			//options.addArguments("--disable-web-security");
+			//options.addArguments("--always-authorize-plugins");
+			//options.addArguments("--allow-running-insecure-content");
+			//options.addArguments("--test-type");
+			//options.addArguments("--enable-npapi");
+			//options.addArguments("--disable-extensions");
 			options.addArguments("start-maximized");
-			options.addArguments("disable-infobars");
+			//options.addArguments("disable-infobars");
 
 			capability = DesiredCapabilities.chrome();
 			capability.setJavascriptEnabled(true);
